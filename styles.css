@@ -1,0 +1,282 @@
+*  { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size:10px;
+    color:#0800ff ;
+}
+
+@font-face { 
+    font-family: "Lobstar";
+    src: url(./Fonts/Lostar.ttf);
+}
+
+@font-face { 
+    font-family: "Agrandir"; 
+    src:url(./Fonts/Agrandir-GrandHeavy.otf);
+}
+@font-face {
+    font-family:"Avenir" ;
+    src: url(./Fonts/Avenir.ttc);
+}
+
+.backBtn { 
+    width: 300px;
+    margin: 1rem;
+    font-family: 'Agrandir';
+    font-size: 2rem;
+    text-decoration: none;
+    color: #0800ff;
+    position: sticky;
+}
+
+.backBtn:hover { 
+    background-color: black;
+    color: white;
+    width: 3vw;
+}
+
+
+
+/*------------------ stying for Kusama page--------------------- */
+h1 { 
+    margin-top: 5rem;
+    font-family: 'Agrandir';
+    font-size: 10rem;
+    text-align: center;
+}
+
+h2 { 
+    font-family: 'Agrandir';
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5rem;
+
+}
+
+h3 { 
+  font-family: 'Agrandir';
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+figcaption { 
+    font-size: 2rem;
+}
+
+.kusamaBackground { 
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #fcba03;
+}
+
+#kusamaOutdoors { 
+    width: 100vw;
+    height: auto;
+    object-fit: fill;
+    position: relative;
+}
+
+.centered { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#kusamaDescr { 
+    font-family:'Avenir';
+    font-size: 2rem;
+    width: 70vw;
+    text-align: center;
+    margin: 1rem;
+}
+
+
+ .imageGallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px 0;
+    width: 100%;
+    scrollbar-width: thin;
+  }
+  
+  .imageGallery figure {
+    scroll-snap-align: start;
+    width: 400px;
+    height: auto;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 0 0 auto;
+  }
+  
+  .imageGallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .imageGallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  .imageGallery figcaption {
+    padding: 12px;
+    font-family: "Avenir";
+    font-size: 14px;
+    line-height: 1.4;
+    background-color: #fcba03;
+    height: auto;
+    overflow-y: auto;
+  }
+  
+
+  .imageGallery > a {
+    margin: o auto;
+    width: 80vw;
+    height: auto;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .imageGallery > a img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .imageGallery > figcaption {
+    min-width: 300px;
+    max-width: 300px;
+    flex: 0 0 auto;
+    padding: 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    background-color: #fcba03;
+    height: auto;
+    overflow-y: auto;
+    margin: 0;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .imageGallery::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .imageGallery::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .imageGallery::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  .imageGallery::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .experienceGallery { 
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+
+  }
+
+  .experienceGallery table { 
+    width: 100%;
+    border-collapse: separate;
+    table-layout: fixed;
+  }
+
+  .experienceGallery td { 
+    width: 33.33%;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .experienceGallery img { 
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: block;
+  }
+
+  /* ------------------ styling for p5 page -----------------------*/
+
+ 
+  #p5Descr { 
+    font-size: 4rem;
+  }
+
+  .p5Gallery {
+    width: 100vw;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(25%);
+    gap: 10px;
+  }
+ 
+  
+  .p5Gallery img {
+    width: 60%;
+    height: auto; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .p5Gallery img:hover { 
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  
+
+/* ----------------styling for individual experiment page--------------- */
+  .container { 
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container p { 
+  font-family: "Avenir";
+  font-size: 2rem;
+  width: 90vw;
+}
+
+  .container iframe { 
+    width: 90vw;
+    height: 90vh;
+}
+
+.container img { 
+  width: 60%;
+}
